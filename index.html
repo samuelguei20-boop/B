@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BABY CASH COIN</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="bg-animation">
+<span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header class="header">
+<div class="header-left">
+<h1>Bonjour 👋</h1>
+<div class="top-level">
+<div class="badge" id="rankBadge">🥉 Bronze</div>
+<div class="xp-box">
+<div class="xp-text">
+<span id="levelText">Niveau 1</span>
+<span id="levelPercent">1%</span>
+</div>
+<div class="xp-bar">
+<div class="xp-fill"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="header-right">
+<button class="notif-btn" id="notifBtn">
+<i class="fa-regular fa-bell"></i>
+</button>
+<div class="bcc-logo">
+<div class="bcc-inner">BCC</div>
+</div>
+</div>
+</header>
+
+<section id="homeSection" class="page active-page">
+<div class="future-box">
+<div class="future-title">❝ BCC FUTURE ❞</div>
+<div class="future-scroll">
+<div class="future-track">
+<span>Bienvenue dans notre univers</span>
+<span>Votre avenir numérique commence ici</span>
+<span>Gagnez des récompenses BCC</span>
+<span>Le futur des récompenses numériques</span>
+</div>
+</div>
+</div>
+
+<div class="balance-card">
+<button class="eye-btn" id="toggleBalance">
+<i class="fa-regular fa-eye"></i>
+</button>
+<div class="bridge">
+<div class="bridge-line"></div>
+<div class="tower tower1"></div>
+<div class="tower tower2"></div>
+</div>
+<p class="balance-title">Solde principal</p>
+<div class="balance-main">
+<h2 id="balanceText">0</h2>
+<span>BCC</span>
+</div>
+<div class="cfa-box">
+<p>Estimation en CFA</p>
+<div class="cfa-live">
+<h3 id="cfaText">≈ 0 CFA</h3>
+<div class="live-dot"></div>
+</div>
+</div>
+</div>
+
+<div class="actions">
+<button class="action-btn" data-action="send">
+<div class="action-circle"><i class="fa-solid fa-paper-plane"></i></div>
+<span>Envoyer</span>
+</button>
+<button class="action-btn" data-action="receive">
+<div class="action-circle"><i class="fa-solid fa-download"></i></div>
+<span>Recevoir</span>
+</button>
+<button class="action-btn" data-action="scan">
+<div class="action-circle"><i class="fa-solid fa-qrcode"></i></div>
+<span>Scanner</span>
+</button>
+<button class="action-btn" data-action="convert">
+<div class="action-circle"><i class="fa-solid fa-repeat"></i></div>
+<span>Convertir</span>
+</button>
+</div>
+
+<div class="history-box">
+<div class="history-icon">🕓</div>
+<h3>Aucun historique</h3>
+<p>Les transactions apparaîtront ici</p>
+</div>
+
+<div class="bottom-buttons">
+<button class="contact-btn" id="contactBtn">Nous contacter</button>
+<button class="logout-btn popup-btn">Déconnecter</button>
+</div>
+
+<div class="contact-info" id="contactInfo">
+<p class="contact-email">BCCciservice@gmail.com</p>
+<p class="contact-hint">Avant de cliquer et nous laisser un message, mettez votre ID BCC d'abord</p>
+</div>
+</section>
+
+<section id="rewardSection" class="page">
+<div class="balance-card">
+<button class="eye-btn" id="toggleRewardBalance">
+<i class="fa-regular fa-eye"></i>
+</button>
+<div class="bridge">
+<div class="bridge-line"></div>
+<div class="tower tower1"></div>
+<div class="tower tower2"></div>
+</div>
+<p class="balance-title">Solde Récompense</p>
+<div class="balance-main">
+<h2 id="rewardBalanceText">0</h2>
+<span>BCC</span>
+</div>
+<div class="cfa-box">
+<p>Estimation en CFA</p>
+<div class="cfa-live">
+<h3 id="rewardCfaText">≈ 0 CFA</h3>
+<div class="live-dot"></div>
+</div>
+</div>
+</div>
+
+<div class="wheel-box">
+<div class="wheel-pointer"></div>
+<div class="wheel" id="wheel">
+<div class="wheel-center">BCC</div>
+</div>
+<button id="spinBtn">TOURNER</button>
+<p class="spin-timer" id="spinTimer">Prochain tour dans 24h</p>
+</div>
+
+<button class="transfer-btn" id="transferBtn">Transférer vers le solde principal</button>
+
+<div class="reward-card popup-btn">
+<div class="reward-icon">🎁</div>
+<div>
+<h3>Coffres cadeaux</h3>
+<p>Disponible bientôt</p>
+</div>
+</div>
+
+<div class="reward-card popup-btn">
+<div class="reward-icon">⚡</div>
+<div>
+<h3>Missions quotidiennes</h3>
+<p>Disponible bientôt</p>
+</div>
+</div>
+</section>
+
+<section id="missionsSection" class="page">
+<div class="missions-container">
+<div class="mission-card">
+<div class="mission-header">
+<h3>📱 Réseaux Sociaux</h3>
+<span class="mission-xp">5-20 BCC</span>
+</div>
+<div class="mission-content">
+<div class="sub-mission">
+<span>Liker une page</span>
+<button class="start-btn">Commencer</button>
+</div>
+<div class="sub-mission">
+<span>Partager un post</span>
+<button class="start-btn">Commencer</button>
+</div>
+<div class="sub-mission">
+<span>Suivre un compte</span>
+<button class="start-btn">Commencer</button>
+</div>
+</div>
+</div>
+
+<div class="mission-card">
+<div class="mission-header">
+<h3>📲 Téléchargement d'Apps</h3>
+<span class="mission-xp">15-50 BCC</span>
+</div>
+<div class="mission-content">
+<div class="sub-mission">
+<span>Installer une app</span>
+<button class="start-btn">Commencer</button>
+</div>
+</div>
+</div>
+
+<div class="mission-card">
+<div class="mission-header">
+<h3>📋 Sondages Rapides</h3>
+<span class="mission-xp">5-25 BCC</span>
+</div>
+<div class="mission-content">
+<div class="sub-mission">
+<span>Sondage 2 min</span>
+<button class="start-btn">Commencer</button>
+</div>
+</div>
+</div>
+
+<div class="mission-card">
+<div class="mission-header">
+<h3>👥 Parrainage</h3>
+<span class="mission-xp">50 BCC/ami</span>
+</div>
+<div class="mission-content">
+<div class="sub-mission">
+<span>Inviter un ami</span>
+<button class="start-btn">Inviter</button>
+</div>
+</div>
+</div>
+
+<div class="mission-card">
+<div class="mission-header">
+<h3>🎥 Vidéos & Pubs</h3>
+<span class="mission-xp">2-10 BCC</span>
+</div>
+<div class="mission-content">
+<div class="sub-mission">
+<span>Regarder une pub</span>
+<button class="start-btn">Regarder</button>
+</div>
+<p class="limit-text">Limite : 20/jour</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="settingsSection" class="page">
+<div class="settings-block">
+<h3>Mon Profil</h3>
+<div class="profile-info">
+<div class="profile-avatar">SG</div>
+<div class="profile-details">
+<p class="profile-name">Samuel Guei</p>
+<p class="profile-id">ID: BCC-847291</p>
+<p class="profile-date">Membre depuis Oct 2025</p>
+</div>
+<button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+</div>
+</div>
+
+<div class="settings-block">
+<h3>Sécurité & Accès</h3>
+<div class="setting-item">
+<span>Changer le mot de passe</span>
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class="setting-item">
+<span>Authentification 2FA</span>
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class="setting-item danger">
+<span>Supprimer le compte</span>
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</div>
+
+<div class="settings-block">
+<h3>Préférences</h3>
+<div class="setting-item">
+<span>Notifications push</span>
+<label class="switch">
+<input type="checkbox" checked>
+<span class="slider"></span>
+</label>
+</div>
+<div class="setting-item">
+<span>Langue</span>
+<span class="setting-value">Français</span>
+</div>
+<button class="logout-btn full">Se déconnecter</button>
+</div>
+</section>
+
+<nav class="bottom-nav">
+<button class="nav-item active-nav" id="homeBtn"><i class="fa-solid fa-house"></i><span>Accueil</span></button>
+<button class="nav-item" id="rewardBtn"><i class="fa-solid fa-gift"></i><span>Récompense</span></button>
+<button class="center-btn" id="centerBtn"><div class="center-inner"><div class="center-scroll"><span>Bienvenue dans notre univers</span></div></div></button>
+<button class="nav-item" id="missionsBtn"><i class="fa-solid fa-list-check"></i><span>Missions</span></button>
+<button class="nav-item" id="settingsBtn"><i class="fa-regular fa-user"></i><span>Paramètres</span></button>
+</nav>
+
+<div class="popup" id="popup">Disponible bientôt</div>
+
+<div class="modal hidden" id="rankModal">
+<div class="modal-box">
+<h3>Niveaux & Médailles</h3>
+<div class="rank-list">
+<div class="rank-item"><span>🥉</span><p>N1 à 15 : Bronze</p></div>
+<div class="rank-item"><span>🥈</span><p>N16 à 30 : Silver</p></div>
+<div class="rank-item"><span>🥇</span><p>N31 à 45 : Gold</p></div>
+<div class="rank-item"><span>💎</span><p>N50+ : Diamond</p></div>
+</div>
+<button class="modal-close" id="closeRank">Fermer</button>
+</div>
+</div>
+
+<div class="modal hidden" id="actionModal">
+<div class="modal-box">
+<h3 id="actionTitle">Action</h3>
+<div id="actionContent"></div>
+<button class="modal-close" id="closeAction">Fermer</button>
+</div>
+</div>
+
+<div class="modal hidden" id="quoteModal">
+<div class="modal-box">
+<div class="quote-logo">BCC</div>
+<h3>Info du jour</h3>
+<p id="quoteText">Le succès appartient à ceux qui n'abandonnent jamais.</p>
+<button id="closeQuote">Fermer</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
